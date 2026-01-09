@@ -1,0 +1,103 @@
+/* 整体背景 */
+body {
+    background: #f5f6fa;
+    margin: 0;
+}
+
+/* 顶栏 */
+#topbar {
+    height: 56px;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #444;
+}
+
+/* 布局容器：左栏 + 右侧内容 */
+#layout {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 56px);   /* 去掉顶栏高度 */
+    overflow: hidden;
+}
+
+/* 左侧栏 */
+#sidebar {
+    width: 220px;
+    background: #212529;
+    color: #fff;
+    padding: 20px 15px;
+    height: 100%;
+    overflow-y: auto;
+    transition: width .3s;
+    text-align: center;
+
+}
+
+#sidebar .menu-title {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    text-align: center;
+
+}
+
+#sidebar a {
+    display: block;
+    padding: 10px 0;
+    color: #bbb;
+    text-decoration: none;
+    font-size: 1.0rem;
+    text-align: center;
+
+}
+
+#sidebar a:hover {
+    color: #fff;
+}
+
+/* 折叠侧边栏 */
+#sidebar.collapsed {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* 内容区 */
+#content-area {
+    flex: 1;
+    background: #f8f9fa;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* 表格居中 */
+table th, table td {
+    text-align: center;
+}
+
+/* 隐藏类 */
+.hidden {
+    display: none !important;
+}
+.menu-item {
+    display: block;
+    padding: 10px 12px;
+    color: #ddd;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.2s;
+    text-align: center;
+
+}
+
+.menu-item:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.menu-active {
+    background: #0d6efd !important;  /* 蓝色底 */
+    color: #fff !important;
+    font-weight: bold;
+    text-align: center;
+
+}
