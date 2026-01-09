@@ -57,6 +57,7 @@
 ### 启动步骤
 1. 修改 `config.py` 中的各项配置信息或修改系统环境变量
 2. 启动 Flask 后端服务
+2. 修改会员端与商家端中的 `MainWindow.xaml.cs` 文件中的 `http` 字段中的后端API地址并编译
 
 ## TO DO
 
