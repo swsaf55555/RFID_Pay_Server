@@ -1,5 +1,11 @@
 
-# RFID_Pay 基于 RFID 的会员卡消费系统
+# RFID_Pay 基于 RFID 的会员卡消费系统-服务端
+
+本仓库为**服务端**
+
+**会员端：**[swsaf55555/RFID_Pay_User](https://github.com/swsaf55555/RFID_Pay_User)
+
+**商家端：**[swsaf55555/RFID_Pay_Seller](https://github.com/swsaf55555/RFID_Pay_Seller)
 
 本项目实现了一套完整的会员卡消费系统，支持用户端、商家端和管理员端三端协同操作，通过 RFID 技术实现刷卡支付、信息查询、账单管理等一卡通消费功能。
 
@@ -49,7 +55,7 @@
 4. 申请支付宝沙箱或正式支付接口
 
 ### 启动步骤
-1. 修改 `config.py` 中的数据库连接信息和SECRET_KEY
+1. 修改 `config.py` 中的各项配置信息或修改系统环境变量
 2. 启动 Flask 后端服务
 
 ## TO DO
